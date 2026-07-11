@@ -1,10 +1,28 @@
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
 main {
     max-width: 840px;
+}
+
+h1 {
+    color: steelblue;
 }
 
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 aside {
@@ -14,7 +32,6 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
 }
 
 aside img {
