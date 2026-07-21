@@ -18,6 +18,7 @@
 body {
     font-family: var(--fonte-body);
     color: var(--cor-escura);
+    background-color: var(--cor-clara);
 }
 
 header,
@@ -86,6 +87,7 @@ header {
     grid-template-columns: 120px 1fr;
     align-items: center;
     margin: 20px auto;
+    background-color: var(--cor-secundaria);
 }
 
 header img {
@@ -101,6 +103,6 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--cor-primaria);
+    color: var(--cor-destaque);
     font-weight: bold;
 }
