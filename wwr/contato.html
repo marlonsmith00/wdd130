@@ -5,20 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fale Conosco - Rafting Aventura</title>
   <meta name="description" content="Entre em contato com a equipe do Rafting Aventura para dúvidas, reservas e sugestões. Estamos prontos para atender você.">
+  <meta name="author" content="Marlon Smith">
   <link rel="stylesheet" href="estilos/rafting.css">
 </head>
 <body>
   <header>
     <img src="imagens/logo.png" alt="Rafting Aventura Logo" class="logo">
     <nav>
-      <a href="index.html">Início</a>
+      <a href="index.html">Página Inicial</a>
       <a href="sobre.html">Sobre Nós</a>
-      <a href="contato.html">Contato</a>
+      <a href="passeios.html">Passeios</a>
+      <a href="contato.html">Fale Conosco</a>
     </nav>
   </header>
 
   <main class="contato-container">
-    <h1>Fale Conosco</h1>
+    <h1>Fale Conosco - Rafting Aventura</h1>
 
     <!-- SEÇÃO 1: Informações de Contato e Mapa -->
     <section class="info-contato">
@@ -30,7 +32,6 @@
       </div>
 
       <div class="mapa">
-        <!-- Google Maps Iframe (Sem o style inline) -->
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450937!2d144.95373531531615!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sau!4v1614055230000!5m2!1sen!2sau" 
           width="100%" 
@@ -74,14 +75,14 @@
 
         <fieldset>
           <legend>Finalidade da Mensagem:</legend>
-          <label>
-            <input type="radio" name="finalidade" value="geral" checked> Consulta Geral
+          <label for="geral">
+            <input type="radio" id="geral" name="finalidade" value="geral" checked> Consulta Geral
           </label>
-          <label>
-            <input type="radio" name="finalidade" value="reserva"> Pergunta sobre Reserva
+          <label for="reserva">
+            <input type="radio" id="reserva" name="finalidade" value="reserva"> Pergunta sobre Reserva
           </label>
-          <label>
-            <input type="radio" name="finalidade" value="sugestao"> Sugestão de Site
+          <label for="sugestao">
+            <input type="radio" id="sugestao" name="finalidade" value="sugestao"> Sugestão de Site
           </label>
         </fieldset>
 
@@ -100,11 +101,11 @@
 
   <footer>
     <p>&copy; 2026 Rafting Aventura - Marlon Smith</p>
-    <div class="socialmedia">
-      <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
-      <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
-      <a href="https://youtube.com" target="_blank"><img src="imagens/youtube.png" alt="YouTube"></a>
-    </div>
+    <nav class="redes-sociais">
+      <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook do Rafting Aventura"></a>
+      <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram do Rafting Aventura"></a>
+      <a href="https://youtube.com" target="_blank"><img src="imagens/youtube.png" alt="YouTube do Rafting Aventura"></a>
+    </nav>
   </footer>
 </body>
 </html>
