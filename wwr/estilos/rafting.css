@@ -180,3 +180,91 @@ footer nav.socialmedia img {
     width: 32px;
     height: 32px;
 }
+
+/* ===================================
+   ESTILOS DA PÁGINA FALE CONOSCO (S05)
+   =================================== */
+
+.contato-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.info-contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.mapa iframe {
+  border: none;
+  border-radius: 8px;
+}
+
+.grid-equipe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid-equipe img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Formulário */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--secondary-color, #f4f4f4);
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-contato fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-enviar {
+  background-color: var(--primary-color, #0056b3);
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  filter: brightness(1.2);
+}
