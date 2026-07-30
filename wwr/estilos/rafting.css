@@ -1,6 +1,6 @@
 :root {
     --cor-primaria: #0A4D68;
-    --cor-secundaria: #088395;
+    --cor-secundaria: #066877; /* Ajustado para alto contraste WCAG AA */
     --cor-destaque: #05BFDB;
     --cor-clara: #F7F7F7;
     --cor-escura: #222222;
@@ -9,7 +9,9 @@
     --fonte-body: Arial, Helvetica, sans-serif;
 }
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,7 +38,7 @@ h2 {
     margin-bottom: 16px;
 }
 
-/* --- Cabeçalho (Header) com CSS Grid e Flexbox --- */
+/* --- Cabeçalho (Header) --- */
 header {
     display: grid;
     grid-template-columns: 120px 1fr;
@@ -51,20 +53,20 @@ header img {
     height: auto;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-nav a {
+header nav a {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
     padding: 8px 12px;
 }
 
-nav a:hover {
+header nav a:hover {
     color: var(--cor-destaque);
 }
 
@@ -114,10 +116,10 @@ nav a:hover {
 
 .historia p {
     line-height: 1.6;
-    text-align: justify;
+    color: var(--cor-escura);
 }
 
-/* --- Seção Aventura (5 Imagens com Figure/Figcaption) --- */
+/* --- Seção Aventura (5 Imagens) --- */
 .aventuras {
     margin: 32px 0;
 }
@@ -162,9 +164,10 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9rem;
+    color: #ffffff;
 }
 
-.redes-sociais {
+.socialmedia {
     display: flex;
     gap: 12px;
     margin: 0;
@@ -172,7 +175,7 @@ footer p {
     justify-content: flex-end;
 }
 
-.redes-sociais img {
+.socialmedia img {
     width: 32px;
     height: 32px;
 }
