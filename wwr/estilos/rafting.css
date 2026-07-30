@@ -1,6 +1,6 @@
 :root {
     --cor-primaria: #0A4D68;
-    --cor-secundaria: #066877; /* Ajustado para alto contraste WCAG AA */
+    --cor-secundaria: #066877;
     --cor-destaque: #05BFDB;
     --cor-clara: #F7F7F7;
     --cor-escura: #222222;
@@ -45,6 +45,7 @@ header {
     align-items: center;
     margin: 20px auto;
     background-color: var(--cor-secundaria);
+    color: #ffffff; /* Garante aprovação no contraste */
     padding: 10px;
 }
 
@@ -167,7 +168,7 @@ footer p {
     color: #ffffff;
 }
 
-.socialmedia {
+footer nav.socialmedia {
     display: flex;
     gap: 12px;
     margin: 0;
@@ -175,7 +176,7 @@ footer p {
     justify-content: flex-end;
 }
 
-.socialmedia img {
+footer nav.socialmedia img {
     width: 32px;
     height: 32px;
 }
