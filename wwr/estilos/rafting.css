@@ -200,6 +200,7 @@ footer nav.socialmedia img {
 }
 
 .mapa iframe {
+  width: 100%;
   border: none;
   border-radius: 8px;
 }
