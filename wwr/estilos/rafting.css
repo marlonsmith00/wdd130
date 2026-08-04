@@ -45,7 +45,7 @@ header {
     align-items: center;
     margin: 20px auto;
     background-color: var(--cor-secundaria);
-    color: #ffffff; /* Garante aprovação no contraste */
+    color: #ffffff;
     padding: 10px;
 }
 
@@ -109,7 +109,24 @@ header nav a:hover {
     margin-left: 16px;
 }
 
-/* --- Seção História --- */
+/* --- Botão de Chamada Para Ação (CTA) --- */
+.btn-cta {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: var(--cor-secundaria);
+}
+
+/* --- Seção Quem Somos / História --- */
 .historia {
     margin: 32px 0;
     padding: 16px;
@@ -118,37 +135,70 @@ header nav a:hover {
 .historia p {
     line-height: 1.6;
     color: var(--cor-escura);
-}
-
-/* --- Seção Aventura (5 Imagens) --- */
-.aventuras {
-    margin: 32px 0;
-}
-
-.galeria-aventuras {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.galeria-aventuras figure {
-    flex: 1;
-    margin: 0;
     text-align: center;
 }
 
-.galeria-aventuras img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 4px;
+/* --- Seção Destaques (Grid) --- */
+.destaques {
+    margin: 32px 0;
+    padding: 16px;
 }
 
-.galeria-aventuras figcaption {
-    font-size: 0.85rem;
-    font-weight: bold;
-    margin-top: 6px;
+.grid-destaques {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.grid-destaques img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.texto-destaque h3 {
+    font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
+    margin-bottom: 8px;
+}
+
+.texto-destaque p {
+    line-height: 1.6;
+}
+
+/* --- Seção Newsletter --- */
+.newsletter-secao {
+    background-color: var(--cor-secundaria);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 16px;
+    margin: 32px 0;
+    border-radius: 8px;
+}
+
+.newsletter-secao h2 {
+    color: #ffffff;
+}
+
+.form-newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.form-newsletter label {
+    font-weight: bold;
+}
+
+.form-newsletter input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 /* --- Rodapé (Footer) --- */
@@ -168,7 +218,7 @@ footer p {
     color: #ffffff;
 }
 
-footer nav.socialmedia {
+footer nav.redes-sociais {
     display: flex;
     gap: 12px;
     margin: 0;
@@ -176,7 +226,7 @@ footer nav.socialmedia {
     justify-content: flex-end;
 }
 
-footer nav.socialmedia img {
+footer nav.redes-sociais img {
     width: 32px;
     height: 32px;
 }
@@ -186,6 +236,7 @@ footer nav.socialmedia img {
    =================================== */
 
 .contato-container {
+  width: auto;
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
@@ -220,12 +271,12 @@ footer nav.socialmedia img {
   border-radius: 8px;
 }
 
-/* Formulário */
+/* Formulário Fale Conosco */
 .form-contato {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background-color: var(--secondary-color, #f4f4f4);
+  background-color: var(--cor-clara);
   padding: 25px;
   border-radius: 8px;
 }
@@ -255,7 +306,7 @@ footer nav.socialmedia img {
 }
 
 .btn-enviar {
-  background-color: var(--primary-color, #0056b3);
+  background-color: var(--cor-primaria);
   color: #ffffff;
   padding: 12px 20px;
   border: none;
@@ -268,4 +319,78 @@ footer nav.socialmedia img {
 
 .btn-enviar:hover {
   filter: brightness(1.2);
+}
+
+/* ===================================
+   ESTILOS DA PÁGINA PASSEIOS (S06)
+   =================================== */
+
+.passeios-container {
+  width: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cta-contato {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 1.1rem;
+}
+
+.galeria-passeios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.passeio-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.passeio-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.passeio-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.passeio-card p {
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.tabela-secao {
+  margin-bottom: 40px;
+}
+
+.tabela-passeios {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-passeios th,
+.tabela-passeios td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabela-passeios th {
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+}
+
+.tabela-passeios tr:nth-child(even) {
+  background-color: var(--cor-clara);
 }

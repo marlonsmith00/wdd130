@@ -1,84 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>WDD 130 | Marlon Smith Dantas dos Santos</title>
-
-    <meta name="description"
-      content="Página inicial de Marlon Smith Dantas dos Santos para o curso WDD 130, apresentando informações pessoais e atividades do curso.">
-
-    <meta name="author" content="Marlon Smith Dantas dos Santos">
-
-    <link rel="stylesheet" href="estilos/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafting Aventura - Passeios de Rafting em Corredeiras</title>
+  <meta name="description" content="Rafting Aventura oferece passeios de rafting para todos os níveis, com guias experientes e segurança garantida. Reserve sua aventura.">
+  <meta name="author" content="Marlon Smith">
+  <link rel="stylesheet" href="estilos/rafting.css">
 </head>
-
 <body>
+  <header>
+    <img src="imagens/logo.png" alt="Rafting Aventura Logo" class="logo">
+    <nav>
+      <a href="index.html">Página Inicial</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="passeios.html">Passeios</a>
+      <a href="contato.html">Fale Conosco</a>
+    </nav>
+  </header>
 
-    <header>
-        <nav>
-            <a href="#">Página Inicial</a>
-            <a href="wwr/">Site de Rafting</a>
-            <a href="https://www.linkedin.com/in/marlon-smith-5387b5393/">Perfil LinkedIn</a>
-            <a href="https://www.facebook.com/smithmarlon/?locale=pt_BR">Perfil Facebook</a>
-        </nav>
-    </header>
+  <main>
 
-    <main>
+    <!-- SEÇÃO HERO -->
+    <section class="hero">
+      <img src="imagens/hero-rio.jpg" alt="Bote de rafting descendo corredeiras com espuma branca ao redor">
+      <h1>Rafting Aventura</h1>
+      <article>
+        <img src="imagens/guia-equipe.jpg" alt="Guia de rafting sorrindo, segurando um remo">
+        <p>Descubra a emoção de enfrentar corredeiras com guias experientes ao seu lado. Passeios para iniciantes e para quem busca adrenalina de verdade.</p>
+        <a href="passeios.html" class="btn-cta">Conheça Nossos Passeios</a>
+      </article>
+    </section>
 
-        <h1>WDD 130 | Marlon Smith Dantas dos Santos</h1>
+    <!-- SEÇÃO QUEM SOMOS -->
+    <section class="historia">
+      <h2>Quem Somos</h2>
+      <p>A Rafting Aventura nasceu da paixão por rios e corredeiras. Há mais de 10 anos, levamos grupos e famílias para vivenciar a força da natureza com segurança, equipamentos de qualidade e um time de guias apaixonados pelo que fazem.</p>
+    </section>
 
-        <img src="imagens/perfil.jpg" alt="Foto de Marlon Smith">
+    <!-- SEÇÃO GRID: POR QUE NOS ESCOLHER -->
+    <section class="destaques">
+      <h2>Por Que Escolher a Rafting Aventura</h2>
+      <div class="grid-destaques">
+        <img src="imagens/aventura-familia.jpg" alt="Família em bote de rafting em trecho calmo do rio">
+        <div class="texto-destaque">
+          <h3>Passeios Para Toda a Família</h3>
+          <p>Trechos calmos e roteiros pensados para quem está levando crianças ou está enfrentando o primeiro rafting da vida.</p>
+        </div>
+        <img src="imagens/aventura-extrema.jpg" alt="Bote enfrentando corredeiras intensas com respingos de água">
+        <div class="texto-destaque">
+          <h3>Adrenalina Para Quem Busca Mais</h3>
+          <p>Corredeiras classe III e IV para quem já tem experiência e quer sentir a força total do rio.</p>
+        </div>
+      </div>
+    </section>
 
-        <p>
-            Olá! Meu nome é Marlon Smith e moro em Maceió, Alagoas.
-            Gosto de pedalar, caminhar na orla e estou estudando
-            Desenvolvimento Web pelo curso WDD 130 da BYU Pathway.
-            Sou membro da igreja desde meus 11 anos de idade, servi
-            uma missão de tempo integral em 2011, quando tinha 25 anos.
-        </p>
-        <p> Sai para servir missão quando já tinha 25 anos porque até
-            aquele momento eu achava que a missão não seria para mim
-            sempre tive a certeza de que era algo maravilhoso, mas
-            pude sentir de verdade como é poder fazer uma mudança na 
-            vida das pessoas
-        </p>
+    <!-- SEÇÃO NEWSLETTER -->
+    <section class="newsletter-secao">
+      <h2>Assine Nossa Newsletter</h2>
+      <p>Receba novidades sobre passeios, datas especiais e promoções direto no seu e-mail.</p>
+      <form action="#" method="post" class="form-newsletter">
+        <label for="news-nome">Nome:</label>
+        <input type="text" id="news-nome" name="nome" required>
 
-        <ul class="caixa">
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/recife-brazil-temple?lang=por"
-                target="_blank">Templo de Recife, Brasil
-            </a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/maceio-brazil-temple?lang=por"
-                target="_blank">Templo de Maceió, Brasil
-            </a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/sao-paulo-brazil-temple?lang=por"
-                target="_blank">Templo de São Paulo, Brasil
-            </a></li>
-        </ul>
+        <label for="news-email">E-mail:</label>
+        <input type="email" id="news-email" name="email" required>
 
-    </main>
+        <button type="submit" class="btn-enviar">Inscrever-se</button>
+      </form>
+    </section>
 
-    <aside class="caixa">
+  </main>
 
-        <h2>Alagoas</h2>
-
-        <img src="imagens/alagoas.jpg" alt="Praia de Pajuçara em Maceió">
-
-        <p>
-            Alagoas é um estado localizado na região Nordeste do Brasil.
-            É conhecido por suas praias de águas cristalinas, piscinas naturais,
-            belas paisagens e forte tradição cultural. Sua capital é Maceió,
-            considerada um dos principais destinos turísticos do país.
-        </p>
-
-    </aside>
-
-    <footer>
-        <p>© 2026 🌅 Marlon Smith 🌅 Maceió - Alagoas</p>
-    </footer>
-
+  <footer>
+    <p>&copy; 2026 Rafting Aventura - Marlon Smith</p>
+    <nav class="redes-sociais">
+      <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook do Rafting Aventura"></a>
+      <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram do Rafting Aventura"></a>
+      <a href="https://youtube.com" target="_blank"><img src="imagens/youtube.png" alt="YouTube do Rafting Aventura"></a>
+    </nav>
+  </footer>
 </body>
-
 </html>
